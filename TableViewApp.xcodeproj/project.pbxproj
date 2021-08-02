@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0B16ADDF26B89008003D3B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16ADDE26B89008003D3B3F /* AppDelegate.swift */; };
 		0B16ADE126B89008003D3B3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16ADE026B89008003D3B3F /* SceneDelegate.swift */; };
-		0B16ADE326B89008003D3B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16ADE226B89008003D3B3F /* ViewController.swift */; };
 		0B16ADE626B89008003D3B3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B16ADE426B89008003D3B3F /* Main.storyboard */; };
 		0B16ADE826B8900B003D3B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B16ADE726B8900B003D3B3F /* Assets.xcassets */; };
 		0B16ADEB26B8900B003D3B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B16ADE926B8900B003D3B3F /* LaunchScreen.storyboard */; };
+		0B16ADF626B89119003D3B3F /* NamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16ADF526B89119003D3B3F /* NamesViewController.swift */; };
+		0B16ADF926B8A375003D3B3F /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B16ADF826B8A375003D3B3F /* PersonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B16ADDB26B89008003D3B3F /* TableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B16ADDE26B89008003D3B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B16ADE026B89008003D3B3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B16ADE226B89008003D3B3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B16ADE526B89008003D3B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B16ADE726B8900B003D3B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B16ADEA26B8900B003D3B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B16ADEC26B8900B003D3B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B16ADF526B89119003D3B3F /* NamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesViewController.swift; sourceTree = "<group>"; };
+		0B16ADF826B8A375003D3B3F /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				0B16ADDE26B89008003D3B3F /* AppDelegate.swift */,
+				0B16ADF826B8A375003D3B3F /* PersonModel.swift */,
 				0B16ADE026B89008003D3B3F /* SceneDelegate.swift */,
-				0B16ADE226B89008003D3B3F /* ViewController.swift */,
 				0B16ADE426B89008003D3B3F /* Main.storyboard */,
+				0B16ADF526B89119003D3B3F /* NamesViewController.swift */,
 				0B16ADE726B8900B003D3B3F /* Assets.xcassets */,
 				0B16ADE926B8900B003D3B3F /* LaunchScreen.storyboard */,
 				0B16ADEC26B8900B003D3B3F /* Info.plist */,
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B16ADE326B89008003D3B3F /* ViewController.swift in Sources */,
+				0B16ADF926B8A375003D3B3F /* PersonModel.swift in Sources */,
 				0B16ADDF26B89008003D3B3F /* AppDelegate.swift in Sources */,
+				0B16ADF626B89119003D3B3F /* NamesViewController.swift in Sources */,
 				0B16ADE126B89008003D3B3F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = TableViewApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 327B2F3V2J;
 				INFOPLIST_FILE = TableViewApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
